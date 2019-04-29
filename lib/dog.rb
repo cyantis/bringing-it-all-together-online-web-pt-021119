@@ -1,5 +1,3 @@
-require 'pry'
-
 class Dog
   attr_accessor :name, :breed
   attr_reader :id
@@ -95,5 +93,4 @@ class Dog
 
     DB[:conn].execute(sql, self.name, self.breed, self.id)
   end
-
 end
